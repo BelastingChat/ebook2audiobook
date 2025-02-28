@@ -14,7 +14,7 @@ services:
   ebook2audiobook:
     image: docker.io/athomasson2/ebook2audiobook:latest
     entrypoint: ["python", "app.py", "--script_mode", "full_docker"]
-    command: [] # <- Extra ebook2audiobook parameters can be added here
+    command: ["--share"] # <- Extra ebook2audiobook parameters can be added here
     platform: linux/amd64
     tty: true
     stdin_open: true
